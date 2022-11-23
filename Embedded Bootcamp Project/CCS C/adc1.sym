@@ -1,0 +1,156 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+006     lcd
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+015     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01B     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028-029 i
+02A     @TRIS_C
+02B-02C adcValue
+02D-030 voltage
+031     lcd_init.i
+031-032 @ITOF.P1
+031     MAIN.@SCRATCH1
+032-033 @PRINTF_LU_81.P1
+032-035 @PRINTF_L32D_81FPFPF.P2
+032     lcd_init.@SCRATCH1
+034     @PRINTF_LU_81.@SCRATCH1
+035     @PRINTF_LU_81.@SCRATCH2
+036     @PRINTF_L32D_81FPFPF.P1
+036     @PRINTF_LU_81.@SCRATCH3
+037     @PRINTF_LU_81.@SCRATCH4
+037     @PRINTF_L32D_81FPFPF.@SCRATCH1
+038     @PRINTF_LU_81.@SCRATCH5
+038     @PRINTF_L32D_81FPFPF.@SCRATCH2
+039     @PRINTF_LU_81.@SCRATCH6
+039     @PRINTF_L32D_81FPFPF.@SCRATCH3
+03A     @PRINTF_LU_81.@SCRATCH7
+03A     @PRINTF_L32D_81FPFPF.@SCRATCH4
+03B     @PRINTF_L32D_81FPFPF.@SCRATCH5
+03C     @PRINTF_L32D_81FPFPF.@SCRATCH6
+03D     @PRINTF_L32D_81FPFPF.@SCRATCH7
+03E     @PRINTF_L32D_81FPFPF.@SCRATCH8
+03F-042 @FTOSD.P1
+03F     lcd_putc.c
+03F-042 @DIV3232.P1
+03F-042 @MULFF.P2
+040     lcd_gotoxy.x
+040     @delay_ms1.P1
+041     lcd_gotoxy.y
+042     lcd_gotoxy.address
+043-046 @DIV3232.P1
+043-046 @MULFF.P2
+043     lcd_gotoxy.@SCRATCH1
+043     @FTOSD.@SCRATCH1
+044     lcd_send_byte.address
+045     lcd_send_byte.n
+046     lcd_read_byte.low
+046     lcd_send_byte.@SCRATCH1
+047     lcd_send_nibble.n
+047     lcd_read_byte.high
+047     @MULFF.@SCRATCH1
+047     @DIV3232.@SCRATCH1
+048     lcd_read_byte.@SCRATCH1
+048     @MULFF.@SCRATCH2
+048     @DIV3232.@SCRATCH2
+049     @MULFF.@SCRATCH3
+049     @DIV3232.@SCRATCH3
+04A     @MULFF.@SCRATCH4
+04A     @DIV3232.@SCRATCH4
+04B     @MULFF.@SCRATCH5
+04B     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+07F     @INTERRUPT_AREA
+0FF     @INTERRUPT_AREA
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+
+ROM Allocation:
+00FA  @delay_ms1
+0035  LCD_INIT_STRING
+011C  lcd_read_byte
+010F  lcd_send_nibble
+011B  lcd_send_byte
+0155  lcd_init
+0198  lcd_gotoxy
+0181  lcd_putc
+00CA  AD_int
+03D4  MAIN
+003D  @const94
+01B6  @ITOF
+01D3  @MULFF
+0054  @const100
+0069  @const101
+0248  @PRINTF_LU_81
+007B  @const104
+0314  @FTOSD
+02AB  @DIV3232
+02ED  @PRINTF_L32D_81FPFPF
+0090  @const113
+00A5  @const114
+00B6  @const115
+03D4  @cinit
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\luty1\OneDrive\Belgeler\Embedded Bootcamp Project\CCS C\
+
+Project Files:
+    adc1.c
+    ..\..\..\..\..\..\Program Files (x86)\PICC\devices\16f877.h
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\LCD.C
+
+Units:
+    C:\Users\luty1\OneDrive\Belgeler\Embedded Bootcamp Project\CCS C\adc1.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      adc1.err
+    Ext Symbols: adc1.esym
+    INHX8:       adc1.hex
+    Symbols:     adc1.sym
+    List:        adc1.lst
+    Debug/COFF:  adc1.cof
+    Project:     adc1.PJT
+    Call Tree:   adc1.tre
+    Statistics:  adc1.sta
