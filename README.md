@@ -1,6 +1,6 @@
 # Embedded-Bootcamp-Project
 
-************* This project created for this Bootcamp **************
+************* THIS PROJECT CREATED FOR THIS BOOTCAMP **************
 
 This Embedded Bootcamp has given by AYKUT TAŞDELEN and last about 45 hour of online education
 
