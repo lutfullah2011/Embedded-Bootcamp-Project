@@ -2,10 +2,10 @@
 
 ************* THIS PROJECT CREATED FOR THIS BOOTCAMP **************
 
-This Embedded Bootcamp has given by AYKUT TAŞDELEN and last about 45 hour of online education. (24.10 - 18.11 / 2022)
+This Embedded Bootcamp has given by AYKUT TAŞDELEN and lasted about 45 hours of online education. (24.10 - 18.11 / 2022)
 
-Here is the bootcamp info link:                   https://www.techcareer.net/bootcamp/embedded-bootcamp
-Here is the linkedin profile for AYKUT TAŞDELEN:  https://www.linkedin.com/in/aykuttasdelen/
+Here is the bootcamp info link: https://www.techcareer.net/bootcamp/embedded-bootcamp
+Here is the linkedin profile for AYKUT TAŞDELEN: https://www.linkedin.com/in/aykuttasdelen/
 
 --------------------------------------------------------------------------------
 
